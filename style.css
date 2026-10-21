@@ -1,0 +1,21 @@
+#ve_talk, #ve_sing {
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0 4px;
+}
+#ve_talk:hover, #ve_sing:hover { opacity: 1; }
+.ve-recording {
+    color: #ff4d4d !important;
+    opacity: 1 !important;
+    animation: ve-pulse 1s infinite;
+}
+.ve-busy {
+    opacity: 0.4 !important;
+    pointer-events: none;
+}
+@keyframes ve-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+.ve-note { font-size: 0.85em; opacity: 0.75; }
